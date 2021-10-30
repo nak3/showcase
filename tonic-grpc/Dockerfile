@@ -7,4 +7,4 @@ RUN cargo install --path .
 FROM debian:buster-slim as runner
 COPY --from=builder /usr/local/cargo/bin/tonic-grpc /usr/local/bin/tonic-grpc
 EXPOSE 8080
-CMD ["timeout"]
+CMD ["tonic-grpc"]

@@ -36,7 +36,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         .build()
         .unwrap();
 
-    let addr = "[::1]:8080".parse()?;
+    let addr = "0.0.0.0:8080".parse()?;
     let greeter = MyGreeter::default();
 
     Server::builder()
