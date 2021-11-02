@@ -1,0 +1,19 @@
+[package]
+name = "argh"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+argh = "0.1"
+
+[[bin]]
+name = "simple"
+path = "src/simple.rs"
+
+[[bin]]
+name = "positional"
+path = "src/positional.rs"
+
+[[bin]]
+name = "subcommand"
+path = "src/subcommand.rs"
