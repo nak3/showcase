@@ -15,6 +15,7 @@ jobs:
         - timeout
         - tonic-grpc
         - hyper-simple
+        - yew-simple
 
     steps:
       - name: Checkout
