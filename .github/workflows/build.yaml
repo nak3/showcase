@@ -16,6 +16,7 @@ jobs:
         - tonic-grpc
         - hyper-simple
         - yew-simple
+        - warp-simple
 
     steps:
       - name: Checkout
