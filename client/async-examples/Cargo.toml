@@ -7,7 +7,7 @@ edition = "2021"
 
 [dependencies]
 tokio = { version = "1", features = ["full"] }
-futures = "0.3"
+futures = { version = "0.3", features = ["thread-pool"] }
 
 [[bin]]
 name = "raw"
@@ -20,3 +20,7 @@ path = "src/futures.rs"
 [[bin]]
 name = "tokio"
 path = "src/tokio.rs"
+
+[[bin]]
+name = "async_move"
+path = "src/async_move.rs"
